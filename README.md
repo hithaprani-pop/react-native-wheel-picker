@@ -14,18 +14,13 @@ The android component is based on https://github.com/AigeStudio/WheelPicker whic
 
 ## Getting Started
 ```
-npm install @gregfrench/react-native-wheel-picker --save
+npm install redepampa/react-native-wheel-picker --save
 ```
 
 or
 
 ```
-yarn add @gregfrench/react-native-wheel-picker
-```
-
-To link the project, please run
-```
-react-native link @gregfrench/react-native-wheel-picker
+yarn add redepampa/react-native-wheel-picker
 ```
 
 #### iOS
