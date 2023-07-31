@@ -3,6 +3,7 @@
 [![npm version](http://img.shields.io/npm/dm/@gregfrench/react-native-wheel-picker.svg?style=flat-square)](https://www.npmjs.com/package/@gregfrench/react-native-wheel-picker "View this project on npm")
 
 ## Introduction
+## WARNING: THIS LIBRARY NO LONGER WORKS ON ANDROID. PLEASE DO NOT USE THIS. THANKS.
 Cross platform Picker component based on React-native.
 
 Since picker is originally supported by ios while Android only supports a ugly Spinner component. If you want to have the same user behaviour, you can use this.
@@ -55,19 +56,18 @@ const WheelPicker = () => {
 
   return (
     <View>
-      <Text>
-        <Picker style={{width: 150, height: 180}}
-          lineColor="#000000" //to set top and bottom line color (Without gradients)
-          lineGradientColorFrom="#008000" //to set top and bottom starting gradient line color
-          lineGradientColorTo="#FF5733" //to set top and bottom ending gradient
-          selectedValue={selectedItem}
-          itemStyle={{color:"black", fontSize:26}}
-          onValueChange={(index) => setSelectedItem(index) }>
-          {itemList.map((value, i) => (
-            <PickerItem label={value} value={i} key={i}/>
-          ))}
-        </Picker>
-      </Text>
+      <Picker
+        style={{width: 150, height: 180}}
+        lineColor="#000000" //to set top and bottom line color (Without gradients)
+        lineGradientColorFrom="#008000" //to set top and bottom starting gradient line color
+        lineGradientColorTo="#FF5733" //to set top and bottom ending gradient
+        selectedValue={selectedItem}
+        itemStyle={{color:'black', fontSize:26}}
+        onValueChange={(index) => setSelectedItem(index) }>
+        {itemList.map((value, i) => (
+          <PickerItem label={value} value={i} key={i}/>
+        ))}
+      </Picker>
     </View>
   );
 };
