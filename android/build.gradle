@@ -16,6 +16,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    implementation 'com.github.AigeStudio:WheelPicker:-aac60a179d-1'
+    // implementation 'com.github.AigeStudio:WheelPicker:-aac60a179d-1'
     implementation 'com.facebook.react:react-native:+'
 }
