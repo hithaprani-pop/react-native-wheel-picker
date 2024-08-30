@@ -2,7 +2,8 @@ package com.zyu;
 
 import android.graphics.Color;
 
-import com.aigestudio.wheelpicker.core.AbstractWheelPicker;
+// import com.aigestudio.wheelpicker.core.AbstractWheelPicker;
+import com.github.AigeStudio.WheelPicker.core.AbstractWheelPicker;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.common.MapBuilder;
